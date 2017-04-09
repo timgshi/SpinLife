@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */; };
+		4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08631E9A5CCD00D684F2 /* ViewController.swift */; };
+		4B6A08671E9A5CCD00D684F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A08651E9A5CCD00D684F2 /* Main.storyboard */; };
+		4B6A08691E9A5CCD00D684F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A08681E9A5CCD00D684F2 /* Assets.xcassets */; };
+		4B6A086C1E9A5CCD00D684F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */; };
+		4B6A08771E9A5CCD00D684F2 /* SpinLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08761E9A5CCD00D684F2 /* SpinLifeTests.swift */; };
+		4B6A08821E9A5CCD00D684F2 /* SpinLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08811E9A5CCD00D684F2 /* SpinLifeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B6A08731E9A5CCD00D684F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6A08561E9A5CCD00D684F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B6A085D1E9A5CCD00D684F2;
+			remoteInfo = SpinLife;
+		};
+		4B6A087E1E9A5CCD00D684F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6A08561E9A5CCD00D684F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B6A085D1E9A5CCD00D684F2;
+			remoteInfo = SpinLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B6A085E1E9A5CCD00D684F2 /* SpinLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B6A08631E9A5CCD00D684F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B6A08661E9A5CCD00D684F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B6A08681E9A5CCD00D684F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B6A086B1E9A5CCD00D684F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B6A086D1E9A5CCD00D684F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6A08721E9A5CCD00D684F2 /* SpinLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6A08761E9A5CCD00D684F2 /* SpinLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLifeTests.swift; sourceTree = "<group>"; };
+		4B6A08781E9A5CCD00D684F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6A087D1E9A5CCD00D684F2 /* SpinLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6A08811E9A5CCD00D684F2 /* SpinLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLifeUITests.swift; sourceTree = "<group>"; };
+		4B6A08831E9A5CCD00D684F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B6A085B1E9A5CCD00D684F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A086F1E9A5CCD00D684F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A087A1E9A5CCD00D684F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B6A08551E9A5CCD00D684F2 = {
+			isa = PBXGroup;
+			children = (
+				4B6A08601E9A5CCD00D684F2 /* SpinLife */,
+				4B6A08751E9A5CCD00D684F2 /* SpinLifeTests */,
+				4B6A08801E9A5CCD00D684F2 /* SpinLifeUITests */,
+				4B6A085F1E9A5CCD00D684F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B6A085F1E9A5CCD00D684F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A085E1E9A5CCD00D684F2 /* SpinLife.app */,
+				4B6A08721E9A5CCD00D684F2 /* SpinLifeTests.xctest */,
+				4B6A087D1E9A5CCD00D684F2 /* SpinLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B6A08601E9A5CCD00D684F2 /* SpinLife */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */,
+				4B6A08631E9A5CCD00D684F2 /* ViewController.swift */,
+				4B6A08651E9A5CCD00D684F2 /* Main.storyboard */,
+				4B6A08681E9A5CCD00D684F2 /* Assets.xcassets */,
+				4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */,
+				4B6A086D1E9A5CCD00D684F2 /* Info.plist */,
+			);
+			path = SpinLife;
+			sourceTree = "<group>";
+		};
+		4B6A08751E9A5CCD00D684F2 /* SpinLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A08761E9A5CCD00D684F2 /* SpinLifeTests.swift */,
+				4B6A08781E9A5CCD00D684F2 /* Info.plist */,
+			);
+			path = SpinLifeTests;
+			sourceTree = "<group>";
+		};
+		4B6A08801E9A5CCD00D684F2 /* SpinLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A08811E9A5CCD00D684F2 /* SpinLifeUITests.swift */,
+				4B6A08831E9A5CCD00D684F2 /* Info.plist */,
+			);
+			path = SpinLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B6A085D1E9A5CCD00D684F2 /* SpinLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6A08861E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLife" */;
+			buildPhases = (
+				4B6A085A1E9A5CCD00D684F2 /* Sources */,
+				4B6A085B1E9A5CCD00D684F2 /* Frameworks */,
+				4B6A085C1E9A5CCD00D684F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinLife;
+			productName = SpinLife;
+			productReference = 4B6A085E1E9A5CCD00D684F2 /* SpinLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B6A08711E9A5CCD00D684F2 /* SpinLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6A08891E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeTests" */;
+			buildPhases = (
+				4B6A086E1E9A5CCD00D684F2 /* Sources */,
+				4B6A086F1E9A5CCD00D684F2 /* Frameworks */,
+				4B6A08701E9A5CCD00D684F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B6A08741E9A5CCD00D684F2 /* PBXTargetDependency */,
+			);
+			name = SpinLifeTests;
+			productName = SpinLifeTests;
+			productReference = 4B6A08721E9A5CCD00D684F2 /* SpinLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B6A087C1E9A5CCD00D684F2 /* SpinLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6A088C1E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeUITests" */;
+			buildPhases = (
+				4B6A08791E9A5CCD00D684F2 /* Sources */,
+				4B6A087A1E9A5CCD00D684F2 /* Frameworks */,
+				4B6A087B1E9A5CCD00D684F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B6A087F1E9A5CCD00D684F2 /* PBXTargetDependency */,
+			);
+			name = SpinLifeUITests;
+			productName = SpinLifeUITests;
+			productReference = 4B6A087D1E9A5CCD00D684F2 /* SpinLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B6A08561E9A5CCD00D684F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tim Shi";
+				TargetAttributes = {
+					4B6A085D1E9A5CCD00D684F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QUDK66W5DF;
+						ProvisioningStyle = Automatic;
+					};
+					4B6A08711E9A5CCD00D684F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QUDK66W5DF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B6A085D1E9A5CCD00D684F2;
+					};
+					4B6A087C1E9A5CCD00D684F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QUDK66W5DF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B6A085D1E9A5CCD00D684F2;
+					};
+				};
+			};
+			buildConfigurationList = 4B6A08591E9A5CCD00D684F2 /* Build configuration list for PBXProject "SpinLife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B6A08551E9A5CCD00D684F2;
+			productRefGroup = 4B6A085F1E9A5CCD00D684F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B6A085D1E9A5CCD00D684F2 /* SpinLife */,
+				4B6A08711E9A5CCD00D684F2 /* SpinLifeTests */,
+				4B6A087C1E9A5CCD00D684F2 /* SpinLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B6A085C1E9A5CCD00D684F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A086C1E9A5CCD00D684F2 /* LaunchScreen.storyboard in Resources */,
+				4B6A08691E9A5CCD00D684F2 /* Assets.xcassets in Resources */,
+				4B6A08671E9A5CCD00D684F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A08701E9A5CCD00D684F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A087B1E9A5CCD00D684F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B6A085A1E9A5CCD00D684F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */,
+				4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A086E1E9A5CCD00D684F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A08771E9A5CCD00D684F2 /* SpinLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A08791E9A5CCD00D684F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A08821E9A5CCD00D684F2 /* SpinLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B6A08741E9A5CCD00D684F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B6A085D1E9A5CCD00D684F2 /* SpinLife */;
+			targetProxy = 4B6A08731E9A5CCD00D684F2 /* PBXContainerItemProxy */;
+		};
+		4B6A087F1E9A5CCD00D684F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B6A085D1E9A5CCD00D684F2 /* SpinLife */;
+			targetProxy = 4B6A087E1E9A5CCD00D684F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B6A08651E9A5CCD00D684F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B6A08661E9A5CCD00D684F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B6A086B1E9A5CCD00D684F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B6A08841E9A5CCD00D684F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B6A08851E9A5CCD00D684F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B6A08871E9A5CCD00D684F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B6A08881E9A5CCD00D684F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4B6A088A1E9A5CCD00D684F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinLife.app/SpinLife";
+			};
+			name = Debug;
+		};
+		4B6A088B1E9A5CCD00D684F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinLife.app/SpinLife";
+			};
+			name = Release;
+		};
+		4B6A088D1E9A5CCD00D684F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SpinLife;
+			};
+			name = Debug;
+		};
+		4B6A088E1E9A5CCD00D684F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QUDK66W5DF;
+				INFOPLIST_FILE = SpinLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SpinLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B6A08591E9A5CCD00D684F2 /* Build configuration list for PBXProject "SpinLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A08841E9A5CCD00D684F2 /* Debug */,
+				4B6A08851E9A5CCD00D684F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6A08861E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A08871E9A5CCD00D684F2 /* Debug */,
+				4B6A08881E9A5CCD00D684F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B6A08891E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A088A1E9A5CCD00D684F2 /* Debug */,
+				4B6A088B1E9A5CCD00D684F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B6A088C1E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A088D1E9A5CCD00D684F2 /* Debug */,
+				4B6A088E1E9A5CCD00D684F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B6A08561E9A5CCD00D684F2 /* Project object */;
+}
