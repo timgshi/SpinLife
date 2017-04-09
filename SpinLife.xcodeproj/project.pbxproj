@@ -28,6 +28,7 @@
 		4B6A08A41E9A61AA00D684F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A31E9A61AA00D684F2 /* Constants.swift */; };
 		4B6A08A61E9A638000D684F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A51E9A638000D684F2 /* LoginViewController.swift */; };
 		4B6A08A81E9A67C400D684F2 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A71E9A67C400D684F2 /* Notification.swift */; };
+		4B6A08AA1E9A699700D684F2 /* PlaylistsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A91E9A699700D684F2 /* PlaylistsTableViewController.swift */; };
 		6871A587E3D5D65944C4425E /* Pods_SpinLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13AE435C6847DAE78DA1BD4 /* Pods_SpinLife.framework */; };
 		85BF4FB6FBA6ABD5E9DAC25B /* Pods_SpinLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C678FB4EF8BADAB86A4D909 /* Pods_SpinLifeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		4B6A08A31E9A61AA00D684F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4B6A08A51E9A638000D684F2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B6A08A71E9A67C400D684F2 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		4B6A08A91E9A699700D684F2 /* PlaylistsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsTableViewController.swift; sourceTree = "<group>"; };
 		6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.release.xcconfig"; sourceTree = "<group>"; };
 		B8C4B8D2166981801C0CF7A4 /* Pods_SpinLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 			children = (
 				4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */,
 				4B6A08A51E9A638000D684F2 /* LoginViewController.swift */,
+				4B6A08A91E9A699700D684F2 /* PlaylistsTableViewController.swift */,
 				4B6A08631E9A5CCD00D684F2 /* ViewController.swift */,
 				4B6A08A31E9A61AA00D684F2 /* Constants.swift */,
 				4B6A08A71E9A67C400D684F2 /* Notification.swift */,
@@ -509,6 +512,7 @@
 				4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */,
 				4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */,
 				4B6A08A41E9A61AA00D684F2 /* Constants.swift in Sources */,
+				4B6A08AA1E9A699700D684F2 /* PlaylistsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

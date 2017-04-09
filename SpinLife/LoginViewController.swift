@@ -12,6 +12,25 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
 
     var authViewController: UIViewController?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        NotificationCenter.default.addObserver(forName: .spotifySessionUpdated,
+                                               object: nil,
+                                               queue: OperationQueue.main) { (notification) in
+            self.handleSessionUpdated()
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let auth = SPTAuth.defaultInstance()
+        if ((auth?.session.isValid())!) {
+            self.loginSuccessful()
+        }
+    }
+
     func openLoginPage() {
         let auth = SPTAuth.defaultInstance()
         if (SPTAuth.supportsApplicationAuthentication()) {
@@ -26,10 +45,25 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
         }
     }
 
+    func loginSuccessful() {
+        let playlistsVC = PlaylistsTableViewController()
+        self.navigationController?.pushViewController(playlistsVC, animated: true)
+    }
+
     func authViewControllerWithUrl(url: URL) -> UIViewController {
         let safari = SFSafariViewController(url: url)
         safari.delegate = self
         return safari
+    }
+
+    func handleSessionUpdated() {
+        self.dismiss(animated: true, completion: nil)
+        let auth = SPTAuth.defaultInstance()
+        if (auth?.session != nil && (auth?.session.isValid())!) {
+            self.loginSuccessful()
+        } else {
+            print("Spotify auth failed.")
+        }
     }
 
 }
