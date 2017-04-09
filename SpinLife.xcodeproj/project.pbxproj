@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C830ECDD9C0150BC03DB368 /* Pods_SpinLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C4B8D2166981801C0CF7A4 /* Pods_SpinLifeTests.framework */; };
 		4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */; };
 		4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08631E9A5CCD00D684F2 /* ViewController.swift */; };
 		4B6A08671E9A5CCD00D684F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A08651E9A5CCD00D684F2 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		4B6A089B1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */; };
 		4B6A089C1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */; };
 		4B6A089E1E9A5E2F00D684F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A089D1E9A5E2F00D684F2 /* AVFoundation.framework */; };
+		6871A587E3D5D65944C4425E /* Pods_SpinLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13AE435C6847DAE78DA1BD4 /* Pods_SpinLife.framework */; };
+		85BF4FB6FBA6ABD5E9DAC25B /* Pods_SpinLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C678FB4EF8BADAB86A4D909 /* Pods_SpinLifeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1FDEEB05D8BFB37C19625589 /* Pods-SpinLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C678FB4EF8BADAB86A4D909 /* Pods_SpinLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5360E361A58C46582703D1 /* Pods-SpinLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.debug.xcconfig"; sourceTree = "<group>"; };
 		4B6A085E1E9A5CCD00D684F2 /* SpinLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,9 +67,12 @@
 		4B6A08921E9A5DE300D684F2 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		4B6A089D1E9A5E2F00D684F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4B6A08A21E9A606E00D684F2 /* SpinLife-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpinLife-Bridging-Header.h"; sourceTree = "<group>"; };
 		6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.release.xcconfig"; sourceTree = "<group>"; };
+		B8C4B8D2166981801C0CF7A4 /* Pods_SpinLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA84C9893F949F6D83A1F59B /* Pods-SpinLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C13AE435C6847DAE78DA1BD4 /* Pods_SpinLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF47CCC4F02556AF5EB5C503 /* Pods-SpinLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +85,7 @@
 				4B6A089A1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */,
 				4B6A08971E9A5DE300D684F2 /* SpotifyAuthentication.framework in Frameworks */,
 				4B6A08941E9A5DE300D684F2 /* SpotifyAudioPlayback.framework in Frameworks */,
+				6871A587E3D5D65944C4425E /* Pods_SpinLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,7 @@
 				4B6A089B1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */,
 				4B6A08981E9A5DE300D684F2 /* SpotifyAuthentication.framework in Frameworks */,
 				4B6A08951E9A5DE300D684F2 /* SpotifyAudioPlayback.framework in Frameworks */,
+				1C830ECDD9C0150BC03DB368 /* Pods_SpinLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,7 @@
 				4B6A089C1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */,
 				4B6A08991E9A5DE300D684F2 /* SpotifyAuthentication.framework in Frameworks */,
 				4B6A08961E9A5DE300D684F2 /* SpotifyAudioPlayback.framework in Frameworks */,
+				85BF4FB6FBA6ABD5E9DAC25B /* Pods_SpinLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +146,7 @@
 				4B6A08681E9A5CCD00D684F2 /* Assets.xcassets */,
 				4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */,
 				4B6A086D1E9A5CCD00D684F2 /* Info.plist */,
+				4B6A08A21E9A606E00D684F2 /* SpinLife-Bridging-Header.h */,
 			);
 			path = SpinLife;
 			sourceTree = "<group>";
@@ -180,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				4B6A089D1E9A5E2F00D684F2 /* AVFoundation.framework */,
+				C13AE435C6847DAE78DA1BD4 /* Pods_SpinLife.framework */,
+				B8C4B8D2166981801C0CF7A4 /* Pods_SpinLifeTests.framework */,
+				2C678FB4EF8BADAB86A4D909 /* Pods_SpinLifeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -644,6 +658,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpinLife/SpinLife-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -662,6 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timshi.SpinLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpinLife/SpinLife-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

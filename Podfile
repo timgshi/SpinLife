@@ -6,7 +6,7 @@ target 'SpinLife' do
   use_frameworks!
 
   # Pods for SpinLife
-  pod 'RealmSwift'
+  # pod 'RealmSwift'
 
   target 'SpinLifeTests' do
     inherit! :search_paths
