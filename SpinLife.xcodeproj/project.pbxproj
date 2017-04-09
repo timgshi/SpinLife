@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C84F8417CB99D7C6A66812C /* Pods_SpinLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9D0F72B3C5438B973ECCFE /* Pods_SpinLifeTests.framework */; };
 		4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */; };
 		4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08631E9A5CCD00D684F2 /* ViewController.swift */; };
 		4B6A08671E9A5CCD00D684F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A08651E9A5CCD00D684F2 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		4B6A086C1E9A5CCD00D684F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */; };
 		4B6A08771E9A5CCD00D684F2 /* SpinLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08761E9A5CCD00D684F2 /* SpinLifeTests.swift */; };
 		4B6A08821E9A5CCD00D684F2 /* SpinLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08811E9A5CCD00D684F2 /* SpinLifeUITests.swift */; };
+		99B2760CD2FD9560CBDDA1AA /* Pods_SpinLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D1CB472B72615658F53D82 /* Pods_SpinLifeUITests.framework */; };
+		DB535A006D273BDD7A846A13 /* Pods_SpinLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26C67341096BFAB4EBA2FF3 /* Pods_SpinLife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FDEEB05D8BFB37C19625589 /* Pods-SpinLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D5360E361A58C46582703D1 /* Pods-SpinLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.debug.xcconfig"; sourceTree = "<group>"; };
+		2F9D0F72B3C5438B973ECCFE /* Pods_SpinLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6A085E1E9A5CCD00D684F2 /* SpinLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B6A08631E9A5CCD00D684F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		4B6A087D1E9A5CCD00D684F2 /* SpinLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6A08811E9A5CCD00D684F2 /* SpinLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLifeUITests.swift; sourceTree = "<group>"; };
 		4B6A08831E9A5CCD00D684F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.release.xcconfig"; sourceTree = "<group>"; };
+		BA84C9893F949F6D83A1F59B /* Pods-SpinLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF47CCC4F02556AF5EB5C503 /* Pods-SpinLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F26C67341096BFAB4EBA2FF3 /* Pods_SpinLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D1CB472B72615658F53D82 /* Pods_SpinLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB535A006D273BDD7A846A13 /* Pods_SpinLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C84F8417CB99D7C6A66812C /* Pods_SpinLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B2760CD2FD9560CBDDA1AA /* Pods_SpinLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				4B6A08751E9A5CCD00D684F2 /* SpinLifeTests */,
 				4B6A08801E9A5CCD00D684F2 /* SpinLifeUITests */,
 				4B6A085F1E9A5CCD00D684F2 /* Products */,
+				943ECA1B6E61268544EAE188 /* Pods */,
+				51BDC2DF8D42B23EF9662FF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = SpinLifeUITests;
 			sourceTree = "<group>";
 		};
+		51BDC2DF8D42B23EF9662FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26C67341096BFAB4EBA2FF3 /* Pods_SpinLife.framework */,
+				2F9D0F72B3C5438B973ECCFE /* Pods_SpinLifeTests.framework */,
+				F6D1CB472B72615658F53D82 /* Pods_SpinLifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		943ECA1B6E61268544EAE188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D5360E361A58C46582703D1 /* Pods-SpinLife.debug.xcconfig */,
+				A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */,
+				EF47CCC4F02556AF5EB5C503 /* Pods-SpinLifeTests.debug.xcconfig */,
+				BA84C9893F949F6D83A1F59B /* Pods-SpinLifeTests.release.xcconfig */,
+				1FDEEB05D8BFB37C19625589 /* Pods-SpinLifeUITests.debug.xcconfig */,
+				6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B6A08861E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLife" */;
 			buildPhases = (
+				99F515B53CD2EDA3D64ECB26 /* [CP] Check Pods Manifest.lock */,
 				4B6A085A1E9A5CCD00D684F2 /* Sources */,
 				4B6A085B1E9A5CCD00D684F2 /* Frameworks */,
 				4B6A085C1E9A5CCD00D684F2 /* Resources */,
+				AAE36F8FAEB5201CEC1BF756 /* [CP] Embed Pods Frameworks */,
+				F72955344F830916CF434E2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B6A08891E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeTests" */;
 			buildPhases = (
+				D962CA9E4F42ADF5F110A5F1 /* [CP] Check Pods Manifest.lock */,
 				4B6A086E1E9A5CCD00D684F2 /* Sources */,
 				4B6A086F1E9A5CCD00D684F2 /* Frameworks */,
 				4B6A08701E9A5CCD00D684F2 /* Resources */,
+				98A4D7928458BD25EA419570 /* [CP] Embed Pods Frameworks */,
+				766D27C729FEE6EAE5EB7CBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B6A088C1E9A5CCD00D684F2 /* Build configuration list for PBXNativeTarget "SpinLifeUITests" */;
 			buildPhases = (
+				C30EE166BD532EB674CDBDB0 /* [CP] Check Pods Manifest.lock */,
 				4B6A08791E9A5CCD00D684F2 /* Sources */,
 				4B6A087A1E9A5CCD00D684F2 /* Frameworks */,
 				4B6A087B1E9A5CCD00D684F2 /* Resources */,
+				6E01CB2398F968EC7B178D33 /* [CP] Embed Pods Frameworks */,
+				5515D18A6F33E42D95AE1652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5515D18A6F33E42D95AE1652 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E01CB2398F968EC7B178D33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		766D27C729FEE6EAE5EB7CBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A4D7928458BD25EA419570 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLifeTests/Pods-SpinLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F515B53CD2EDA3D64ECB26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAE36F8FAEB5201CEC1BF756 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C30EE166BD532EB674CDBDB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D962CA9E4F42ADF5F110A5F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F72955344F830916CF434E2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B6A085A1E9A5CCD00D684F2 /* Sources */ = {
@@ -413,6 +600,7 @@
 		};
 		4B6A08871E9A5CCD00D684F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5360E361A58C46582703D1 /* Pods-SpinLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QUDK66W5DF;
@@ -426,6 +614,7 @@
 		};
 		4B6A08881E9A5CCD00D684F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QUDK66W5DF;
@@ -439,6 +628,7 @@
 		};
 		4B6A088A1E9A5CCD00D684F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF47CCC4F02556AF5EB5C503 /* Pods-SpinLifeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +644,7 @@
 		};
 		4B6A088B1E9A5CCD00D684F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA84C9893F949F6D83A1F59B /* Pods-SpinLifeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +660,7 @@
 		};
 		4B6A088D1E9A5CCD00D684F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FDEEB05D8BFB37C19625589 /* Pods-SpinLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QUDK66W5DF;
@@ -483,6 +675,7 @@
 		};
 		4B6A088E1E9A5CCD00D684F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QUDK66W5DF;
