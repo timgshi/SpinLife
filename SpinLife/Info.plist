@@ -25,7 +25,7 @@
 			<string>com.timshi.SpinLife.spotify</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>spinlife://spotify</string>
+				<string>spinlife</string>
 			</array>
 		</dict>
 	</array>

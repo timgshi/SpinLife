@@ -25,12 +25,17 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        let auth = SPTAuth.defaultInstance()
-        if ((auth?.session.isValid())!) {
+        guard let auth = SPTAuth.defaultInstance() else { return }
+        guard let session = auth.session else { return }
+        if (session.isValid()) {
             self.loginSuccessful()
         }
     }
 
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        self.openLoginPage()
+    }
+    
     func openLoginPage() {
         let auth = SPTAuth.defaultInstance()
         if (SPTAuth.supportsApplicationAuthentication()) {
@@ -60,7 +65,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
         self.dismiss(animated: true, completion: nil)
         let auth = SPTAuth.defaultInstance()
         if (auth?.session != nil && (auth?.session.isValid())!) {
-            self.loginSuccessful()
+//            self.loginSuccessful()
         } else {
             print("Spotify auth failed.")
         }
