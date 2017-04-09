@@ -21,7 +21,8 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
             guard let url = auth?.spotifyWebAuthenticationURL() else { return }
             self.authViewController = self.authViewControllerWithUrl(url: url)
             self.definesPresentationContext = true
-            self.present(self.authViewController, animated: true, completion: nil)
+            guard let authVC = self.authViewController else { return }
+            self.present(authVC, animated: true, completion: nil)
         }
     }
 
