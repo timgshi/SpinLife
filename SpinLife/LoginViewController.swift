@@ -28,6 +28,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
         guard let auth = SPTAuth.defaultInstance() else { return }
         guard let session = auth.session else { return }
         if (session.isValid()) {
+            print("\(session.accessToken)")
             self.loginSuccessful()
         }
     }
