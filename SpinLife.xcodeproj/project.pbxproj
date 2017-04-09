@@ -25,6 +25,8 @@
 		4B6A089B1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */; };
 		4B6A089C1E9A5DE300D684F2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */; };
 		4B6A089E1E9A5E2F00D684F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A089D1E9A5E2F00D684F2 /* AVFoundation.framework */; };
+		4B6A08A41E9A61AA00D684F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A31E9A61AA00D684F2 /* Constants.swift */; };
+		4B6A08A61E9A638000D684F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A08A51E9A638000D684F2 /* LoginViewController.swift */; };
 		6871A587E3D5D65944C4425E /* Pods_SpinLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13AE435C6847DAE78DA1BD4 /* Pods_SpinLife.framework */; };
 		85BF4FB6FBA6ABD5E9DAC25B /* Pods_SpinLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C678FB4EF8BADAB86A4D909 /* Pods_SpinLifeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		4B6A08931E9A5DE300D684F2 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		4B6A089D1E9A5E2F00D684F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4B6A08A21E9A606E00D684F2 /* SpinLife-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpinLife-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B6A08A31E9A61AA00D684F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4B6A08A51E9A638000D684F2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6909CB2FA3FCA64DCF66F1F4 /* Pods-SpinLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLifeUITests/Pods-SpinLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A28DFFEC09083A8D2F291C99 /* Pods-SpinLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinLife/Pods-SpinLife.release.xcconfig"; sourceTree = "<group>"; };
 		B8C4B8D2166981801C0CF7A4 /* Pods_SpinLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				4B6A08611E9A5CCD00D684F2 /* AppDelegate.swift */,
+				4B6A08A51E9A638000D684F2 /* LoginViewController.swift */,
 				4B6A08631E9A5CCD00D684F2 /* ViewController.swift */,
+				4B6A08A31E9A61AA00D684F2 /* Constants.swift */,
 				4B6A08651E9A5CCD00D684F2 /* Main.storyboard */,
 				4B6A08681E9A5CCD00D684F2 /* Assets.xcassets */,
 				4B6A086A1E9A5CCD00D684F2 /* LaunchScreen.storyboard */,
@@ -495,8 +501,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6A08A61E9A638000D684F2 /* LoginViewController.swift in Sources */,
 				4B6A08641E9A5CCD00D684F2 /* ViewController.swift in Sources */,
 				4B6A08621E9A5CCD00D684F2 /* AppDelegate.swift in Sources */,
+				4B6A08A41E9A61AA00D684F2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

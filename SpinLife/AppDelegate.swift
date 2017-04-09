@@ -19,7 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         self.spotifyAuth = SPTAuth.defaultInstance()
-
+        self.spotifyPlayer = SPTAudioStreamingController.sharedInstance()
+        self.spotifyAuth?.clientID = Constants.spotifyClientId
+        self.spotifyAuth?.redirectURL = URL(string: Constants.spotifyRedirectUrl)
+        self.spotifyAuth?.sessionUserDefaultsKey = Constants.spotifySessionUserDefaultsKey
+        self.spotifyAuth?.requestedScopes = [SPTAuthStreamingScope, SPTAuthPlaylistReadPrivateScope, SPTAuthPlaylistReadCollaborativeScope, SPTAuthUserLibraryModifyScope, SPTAuthPlaylistModifyPrivateScope]
+        
 
         return true
     }
