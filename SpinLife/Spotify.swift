@@ -94,6 +94,48 @@ enum SpotifyPlaylistRouter: URLRequestConvertible {
 
 }
 
+enum SpotifyTrackRouter: URLRequestConvertible {
+
+    case getAudioFeaturesBulk(tracks: [SpotifyTrack])
+
+    static let baseURLString = SpotifyWebApiClient.spotifyApiBase
+
+    var method: HTTPMethod {
+        switch self {
+        case .getAudioFeaturesBulk:
+            return .get
+        }
+    }
+
+    var path: String {
+        switch self {
+        case .getAudioFeaturesBulk:
+            return "/audio-features"
+        }
+    }
+
+    // MARK: URLRequestConvertible
+
+    func asURLRequest() throws -> URLRequest {
+        let url = try SpotifyPlaylistRouter.baseURLString.asURL()
+
+        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        urlRequest.httpMethod = method.rawValue
+
+
+        switch self {
+        case .getAudioFeaturesBulk(let tracks):
+            let ids = tracks.map { track in track.id }
+            let idString = ids.reduce("") { text, id in "\(text),\(id)" }
+            let parameters = ["ids": idString]
+            urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+        }
+
+        return urlRequest
+    }
+
+}
+
 struct SpotifyPlaylist: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
     let id: String
     let name: String
