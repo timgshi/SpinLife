@@ -141,6 +141,51 @@ struct SpotifyPlaylist: ResponseObjectSerializable, ResponseCollectionSerializab
 
 }
 
+struct SpotifyTrack: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
+    let id: String
+    let name: String
+    let href: String
+    let uri: String
+
+    var description: String {
+        return "Playlist: { id: \(id), name: \(name), href: \(href) }"
+    }
+
+    init?(response: HTTPURLResponse, representation: Any) {
+        guard
+            let representation = representation as? [String: Any],
+            let id = representation["id"] as? String,
+            let name = representation["name"] as? String,
+            let href = representation["href"] as? String,
+            let uri = representation["uri"] as? String
+            else { return nil }
+
+        self.id = id
+        self.name = name
+        self.href = href
+        self.uri = uri
+    }
+
+    static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [SpotifyTrack] {
+        var collection: [SpotifyTrack] = []
+
+        if let tracksResult = representation as? [String: Any] {
+            if let tracksResultItems = tracksResult["items"] as? [[String: Any]] {
+                for itemRepresentation in tracksResultItems {
+                    if let trackRepresentation = itemRepresentation["track"] as? [String: Any] {
+                        if let item = self.init(response: response, representation: trackRepresentation) {
+                            collection.append(item)
+                        }
+                    }
+                }
+            }
+        }
+
+        return collection
+    }
+    
+}
+
 enum BackendError: Error {
     case network(error: Error) // Capture any underlying Error from the URLSession API
     case dataSerialization(error: Error)

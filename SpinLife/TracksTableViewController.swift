@@ -18,36 +18,43 @@ class TracksTableViewController: UITableViewController {
             self.loadTracks()
         }
     }
+    var tracks = [SpotifyTrack]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let estimatedRowHeight = CGFloat(100.0)
+        self.tableView.registerCell(TracksTableViewCell.self)
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = estimatedRowHeight
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.tracks.count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueCell(for: indexPath) as TracksTableViewCell
+        let track = self.track(atIndexPath: indexPath)
+        cell.nameLabel.text = track.name
+        return cell
     }
 
     func loadTracks() {
         guard let playlist = self.playlist else { return }
-        self.spotifyManager.request(SpotifyPlaylistRouter.getTracks(playlist: playlist)).responseJSON { response in
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
+        self.title = playlist.name
+        self.spotifyManager.request(SpotifyPlaylistRouter.getTracks(playlist: playlist)).responseCollection { (response: DataResponse<[SpotifyTrack]>) in
+
+            if let tracks = response.result.value {
+                self.tracks = tracks
+                self.tableView.reloadData()
             }
         }
+    }
+
+    func track(atIndexPath indexPath: IndexPath) -> SpotifyTrack {
+        return self.tracks[indexPath.row]
     }
 
     func makeSpotifyManager() -> SessionManager {
