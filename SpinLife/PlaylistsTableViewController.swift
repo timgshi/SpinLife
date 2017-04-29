@@ -16,11 +16,11 @@ class PlaylistsTableViewController: UITableViewController {
 
         guard let auth = SPTAuth.defaultInstance() else { return }
         SpotifyWebApiClient.default.spotifyAuth = auth
-        SpotifyWebApiClient.default.sessionManager.request(SpotifyPlaylistRouter.getMyPlaylists()).responseJSON { response in
-            print(response.result)   // result of response serialization
+        SpotifyWebApiClient.default.sessionManager.request(SpotifyPlaylistRouter.getMyPlaylists()).responseCollection { (response: DataResponse<[SpotifyPlaylist]>) in
+            debugPrint(response)
 
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
+            if let playlists = response.result.value {
+                playlists.forEach { print("- \($0)") }
             }
         }
     }
