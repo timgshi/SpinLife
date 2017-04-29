@@ -183,11 +183,12 @@ struct SpotifyPlaylist: ResponseObjectSerializable, ResponseCollectionSerializab
 
 }
 
-struct SpotifyTrack: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
+struct SpotifyTrack: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible, Equatable {
     let id: String
     let name: String
     let href: String
     let uri: String
+    var audioFeatures: SpotifyTrackAudioFeatures?
 
     var description: String {
         return "Playlist: { id: \(id), name: \(name), href: \(href) }"
@@ -225,7 +226,10 @@ struct SpotifyTrack: ResponseObjectSerializable, ResponseCollectionSerializable,
 
         return collection
     }
-    
+
+    static func == (lhs: SpotifyTrack, rhs: SpotifyTrack) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 struct SpotifyTrackAudioFeatures: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {

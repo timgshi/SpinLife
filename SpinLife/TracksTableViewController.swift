@@ -39,6 +39,9 @@ class TracksTableViewController: UITableViewController {
         let cell = self.tableView.dequeueCell(for: indexPath) as TracksTableViewCell
         let track = self.track(atIndexPath: indexPath)
         cell.nameLabel.text = track.name
+        if track.audioFeatures != nil {
+            cell.tempo = Int(track.audioFeatures?.tempo ?? 0)
+        }
         return cell
     }
 
@@ -54,6 +57,10 @@ class TracksTableViewController: UITableViewController {
 
                     if let audioFeatures = audioFeaturesResponse.result.value {
                         self.audioFeatures = audioFeatures
+                        for (index, audioFeature) in self.audioFeatures.enumerated() {
+                            self.tracks[index].audioFeatures = audioFeature
+                        }
+                        self.tableView.reloadData()
                     }
                 }
             }
@@ -62,6 +69,11 @@ class TracksTableViewController: UITableViewController {
 
     func track(atIndexPath indexPath: IndexPath) -> SpotifyTrack {
         return self.tracks[indexPath.row]
+    }
+
+    func index(forTrack track: SpotifyTrack) -> Int {
+        guard let index = self.tracks.index(of: track) else { return -1 }
+        return index
     }
 
     func makeSpotifyManager() -> SessionManager {
