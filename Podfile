@@ -8,6 +8,8 @@ target 'SpinLife' do
   # Pods for SpinLife
   # pod 'RealmSwift'
   pod 'Alamofire', '~> 4.4'
+  pod 'Alexandria'
+  pod 'SnapKit'
 
   target 'SpinLifeTests' do
     inherit! :search_paths
