@@ -126,7 +126,7 @@ enum SpotifyTrackRouter: URLRequestConvertible {
         switch self {
         case .getAudioFeaturesBulk(let tracks):
             let ids = tracks.map { track in track.id }
-            let idString = ids.reduce("") { text, id in "\(text),\(id)" }
+            let idString = ids.joined(separator: ",")
             let parameters = ["ids": idString]
             urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
         }
@@ -218,6 +218,55 @@ struct SpotifyTrack: ResponseObjectSerializable, ResponseCollectionSerializable,
                         if let item = self.init(response: response, representation: trackRepresentation) {
                             collection.append(item)
                         }
+                    }
+                }
+            }
+        }
+
+        return collection
+    }
+    
+}
+
+struct SpotifyTrackAudioFeatures: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
+    let id: String
+    let href: String
+    let uri: String
+    let tempo: Double
+    let danceability: Double
+    let energy: Double
+
+    var description: String {
+        return "TrackAudioFeature: { id: \(id), href: \(href), tempo: \(tempo) }"
+    }
+
+    init?(response: HTTPURLResponse, representation: Any) {
+        guard
+            let representation = representation as? [String: Any],
+            let id = representation["id"] as? String,
+            let href = representation["track_href"] as? String,
+            let uri = representation["uri"] as? String,
+            let tempo = representation["tempo"] as? Double,
+            let danceability = representation["danceability"] as? Double,
+            let energy = representation["energy"] as? Double
+            else { return nil }
+
+        self.id = id
+        self.href = href
+        self.uri = uri
+        self.tempo = tempo
+        self.danceability = danceability
+        self.energy = energy
+    }
+
+    static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [SpotifyTrackAudioFeatures] {
+        var collection: [SpotifyTrackAudioFeatures] = []
+
+        if let audioFeaturesResult = representation as? [String: Any] {
+            if let audioFeaturesRepresentation = audioFeaturesResult["audio_features"] as? [[String: Any]] {
+                for itemRepresentation in audioFeaturesRepresentation {
+                    if let item = self.init(response: response, representation: itemRepresentation) {
+                        collection.append(item)
                     }
                 }
             }

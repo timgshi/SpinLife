@@ -19,6 +19,7 @@ class TracksTableViewController: UITableViewController {
         }
     }
     var tracks = [SpotifyTrack]()
+    var audioFeatures = [SpotifyTrackAudioFeatures]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,15 +50,10 @@ class TracksTableViewController: UITableViewController {
             if let tracks = response.result.value {
                 self.tracks = tracks
                 self.tableView.reloadData()
-                self.spotifyManager.request(SpotifyTrackRouter.getAudioFeaturesBulk(tracks: tracks)).responseJSON {
-                    response in
-                    print(response.request)  // original URL request
-                    print(response.response) // HTTP URL response
-                    print(response.data)     // server data
-                    print(response.result)   // result of response serialization
+                self.spotifyManager.request(SpotifyTrackRouter.getAudioFeaturesBulk(tracks: tracks)).responseCollection { (audioFeaturesResponse: DataResponse<[SpotifyTrackAudioFeatures]>) in
 
-                    if let JSON = response.result.value {
-                        print("JSON: \(JSON)")
+                    if let audioFeatures = audioFeaturesResponse.result.value {
+                        self.audioFeatures = audioFeatures
                     }
                 }
             }
