@@ -55,24 +55,29 @@ enum SpotifyPlaylistRouter: URLRequestConvertible {
 
     case getMyPlaylists()
     case getPlaylistTracks(userId: String, playlistId: String)
+    case getTracks(playlist: SpotifyPlaylist)
 
     static let baseURLString = SpotifyWebApiClient.spotifyApiBase
 
     var method: HTTPMethod {
         switch self {
-        case .getMyPlaylists:
-            return .get
-        case .getPlaylistTracks:
-            return .get
+            case .getMyPlaylists:
+                return .get
+            case .getPlaylistTracks:
+                return .get
+            case .getTracks:
+                return .get
         }
     }
 
     var path: String {
         switch self {
-        case .getMyPlaylists:
-            return "/me/playlists"
-        case .getPlaylistTracks(let userId, let playlistId):
-            return "/\(userId)/playlists/\(playlistId)/tracks"
+            case .getMyPlaylists:
+                return "/me/playlists"
+            case .getPlaylistTracks(let userId, let playlistId):
+                return "/users/\(userId)/playlists/\(playlistId)/tracks"
+            case .getTracks(let playlist):
+                return "/users/\(playlist.ownerId)/playlists/\(playlist.id)/tracks"
         }
     }
 
@@ -94,6 +99,7 @@ struct SpotifyPlaylist: ResponseObjectSerializable, ResponseCollectionSerializab
     let name: String
     let href: String
     let uri: String
+    let ownerId: String
 
     var description: String {
         return "Playlist: { id: \(id), name: \(name), href: \(href) }"
@@ -105,13 +111,16 @@ struct SpotifyPlaylist: ResponseObjectSerializable, ResponseCollectionSerializab
             let id = representation["id"] as? String,
             let name = representation["name"] as? String,
             let href = representation["href"] as? String,
-            let uri = representation["uri"] as? String
+            let uri = representation["uri"] as? String,
+            let owner = representation["owner"] as? [String: Any],
+            let ownerId = owner["id"] as? String
         else { return nil }
 
         self.id = id
         self.name = name
         self.href = href
         self.uri = uri
+        self.ownerId = ownerId
     }
 
     static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [SpotifyPlaylist] {

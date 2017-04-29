@@ -38,9 +38,15 @@ class PlaylistsTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let playlist = self.playlist(atIndexPath: indexPath)
+        let trackVC = TracksTableViewController()
+        trackVC.playlist = playlist
+        self.navigationController?.pushViewController(trackVC, animated: true)
+    }
+
     func loadPlaylists() {
         self.spotifyManager.request(SpotifyPlaylistRouter.getMyPlaylists()).responseCollection { (response: DataResponse<[SpotifyPlaylist]>) in
-            debugPrint(response)
 
             if let playlists = response.result.value {
                 self.playlists = playlists
