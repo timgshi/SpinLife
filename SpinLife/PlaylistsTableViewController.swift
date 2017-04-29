@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 class PlaylistsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        guard let auth = SPTAuth.defaultInstance() else { return }
+        SpotifyWebApiClient.default.spotifyAuth = auth
+        SpotifyWebApiClient.default.sessionManager.request(SpotifyPlaylistRouter.getMyPlaylists()).responseJSON { response in
+            print(response.result)   // result of response serialization
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
